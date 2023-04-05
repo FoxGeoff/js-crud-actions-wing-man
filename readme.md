@@ -37,3 +37,27 @@ nodemon - Auto start of the poject after changes run `npm i nodemon --save-dev`
     "nodemon": "^2.0.22"    <<
   }
 ```
+
+### Task: Update app.js
+
+```Javascript
+var apiRouter = require("./routes/api")(db);
+...
+app.use("/api", apiRouter);
+```
+
+1. Add file
+
+```javascript
+//file: routes/api.js
+const express = require("express");
+const router = express.Router();
+const productsRouter = require("./products");
+
+module.exports = function (db) {
+    // setup for products -  DEMO ONLY
+  router.use(productsRouter(db));
+
+  return router;
+};
+```
