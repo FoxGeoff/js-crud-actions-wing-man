@@ -61,3 +61,5 @@ module.exports = function (db) {
   return router;
 };
 ```
+
+### Task: Add Products to Routes (DEMO ONLY)
