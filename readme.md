@@ -93,3 +93,4 @@ welcome to Express
 ### Task: Add Products to Routes (DEMO ONLY cont.)
 
 1. run 'npm i qs'
+2. Add file db.json (products)
