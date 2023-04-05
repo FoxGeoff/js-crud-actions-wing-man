@@ -63,3 +63,29 @@ module.exports = function (db) {
 ```
 
 ### Task: Add Products to Routes (DEMO ONLY)
+
+```javascript
+var express = require('express');
+var router = express.Router();
+const qs = require('qs');
+
+module.exports = function (db) {
+  router
+    .route('/products')
+    .get((req, res) => {
+      res.send(db.get('products').value());
+    });
+...   
+...
+  return router;
+};    
+```
+
+### Task: Out of the box smoke test
+
+1. localhost:3000        // Defined in the bin file
+
+```html
+Express
+welcome to Express
+```
