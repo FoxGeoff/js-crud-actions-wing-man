@@ -92,5 +92,8 @@ welcome to Express
 
 ### Task: Add Products to Routes (DEMO ONLY cont.)
 
-1. run 'npm i qs'
+1. run `npm i qs`
 2. Add file db.json (products)
+3. run `npm install axios`
+4. add file: javascript/lodash.min.js
+5. Add file: javascript/axios.min.js (Promise based HTTP client for the browser and node.js)
