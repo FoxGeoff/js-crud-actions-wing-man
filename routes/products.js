@@ -6,6 +6,7 @@ module.exports = function (db) {
   router
     .route('/products')
     .get((req, res) => {
+      window.alert("Yes!")
       res.send('respond with PRODUCT resources');
       //res.send(db.get('products').value());
     })
