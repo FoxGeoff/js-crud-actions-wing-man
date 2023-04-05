@@ -89,3 +89,7 @@ module.exports = function (db) {
 Express
 welcome to Express
 ```
+
+### Task: Add Products to Routes (DEMO ONLY cont.)
+
+1. run 'npm i qs'

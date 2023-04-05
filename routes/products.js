@@ -6,7 +6,8 @@ module.exports = function (db) {
   router
     .route('/products')
     .get((req, res) => {
-      res.send(db.get('products').value());
+      res.send('respond with PRODUCT resources');
+      //res.send(db.get('products').value());
     })
     .post((req, res) => {
       const newProduct = req.body;
